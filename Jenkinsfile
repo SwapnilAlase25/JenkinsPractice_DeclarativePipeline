@@ -2,21 +2,21 @@
 pipeline {
 	agent any
     stages {
-        stage('build1') {
+        stage('build') {
               steps {
                echo "Building C files ...."
               }
         	}
 		
-		stage('build2') {
+		stage('test') {
               steps {
-                echo "Building C++ files ...."
+                echo "Testing C files ...."
               }
         	}
 		
-		stage('build3') {
+		stage('deloy') {
               steps {
-                echo "Building Java files ...."
+                echo "Deloying C files ...."
               }
         	}
 		}
